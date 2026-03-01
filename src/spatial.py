@@ -18,7 +18,6 @@ class SpatialObject:
         if self.geometry.area == 0.:
             return 0
         
-        # Get rough latitude of given geometry
         lat = self.geometry.centroid.y
 
         # Convert from geographic coordinates to projected coordinates
